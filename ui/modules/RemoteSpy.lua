@@ -923,6 +923,7 @@ repeatCallContext:SetCallback(function()
 
     local oldStatus = oh.getStatus()
     oh.setStatus("Recalling " .. remoteInstance.Name)
+    print(remoteInstance:GetFullName())    
 
     remoteInstance[method](remoteInstance, unpack(selected.args))
 
